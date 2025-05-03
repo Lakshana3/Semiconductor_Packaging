@@ -60,7 +60,7 @@ This workshop bridges the gap between chip design and advanced semiconductor pac
 
 ### L1 - Introduction To Semiconductor Packaging And Industry Overview
 
-![image](/Images/Screenshot (778).png)
+![image](/Images/"Screenshot (778)".png)
 
 ### L2 - Understanding Package Requirements And Foundational Package Types
 
