@@ -334,21 +334,76 @@ FOWLP enables higher performance, smaller form factors, and more I/O options, ma
 
 ### L1 - Introduction And Getting Started With ANSYS Electronics Desktop
 
+ANSYS Electronics Desktop provides several tools for designing, analyzing, and optimizing electronic systems. 
+
+Download, install and open Ansys Electronics Desktop Student 2024 R2.
+
+Key tools include:
+1. HFSS: 3D electromagnetic simulation for high-frequency components like antennas and RF circuits.
+2. Maxwell: Electromagnetic field simulation for low-frequency components such as motors and transformers.
+3. Q3D Extractor: Extracts parasitic RLC values for interconnects, analyzing signal and power integrity.
+4. Icepak: Thermal simulation for electronics, optimizing cooling systems and heat management.
+5. Simplorer: Multi-domain simulation for integrated systems, including electrical, mechanical, and thermal systems.
+These tools enable efficient design and optimization of a wide range of electronic devices and systems.
+
+Here we'll use Icepak to do thermal analysis of packages. 
+
 ![image](/Images/M3/L1/1.png)
 
-![image](/Images/M3/L1/2.png)
+Select Icepak tool. 
+Under project manager window these can be found:
+- 3D Components: Import or create electronic components for thermal simulation.
+- Model: Define system geometry and component placement.
+- Thermal: Assign thermal properties, power dissipation, and boundary conditions.
+- Monitor: Track temperature and thermal metrics during simulation.
+- Solar Loading: Simulate effects of solar radiation on the system.
+- Mesh: Generate computational mesh for accurate heat transfer and airflow simulation.
+- Analysis: Set solver options and run thermal simulations (steady-state/transient).
+- Optometrics: Study parametric variations and radiation/optical effects.
+- Results: Visualize simulation outputs like temperature maps.
+- Field Overlays: Add visual data (contours, vectors) onto geometry for interpretation.
 
 ![image](/Images/M3/L1/3.png)
+
+Import the in-built package FlipChip_BGA. 
 
 ![image](/Images/M3/L1/4.png)
 
 ### L2 - Setting Up A Flip-Chip BGA Package
 
+When creating a Flip Chip BGA (FCBGA) package in Ansys Icepak or similar EDA tools, the following key elements can be defined:
+
+🔹 1. Package Dimensions
+- Package body size (length × width × height)
+- Ball pitch and ball array size
+- Standoff height (distance from substrate to die or board)
+- Die placement (centered or offset)
+
 ![image](/Images/M3/L2/1.png)
+
+🔹 2. Substrate
+- Material (e.g., BT resin, ABF, ceramic)
+- Layer stack-up (number of layers, thicknesses)
+- Thermal conductivity
+- Via structure and routing design
+- CTE matching (to die and board)
 
 ![image](/Images/M3/L2/2.png)
 
+🔹 3. Solder Bumps / Balls
+- Bump material (e.g., SnAgCu, SAC305)
+- Bump height and diameter
+- Ball array layout (full, partial, or custom)
+- Underfill material (optional, for reliability)
+
 ![image](/Images/M3/L2/3.png)
+
+🔹 4. Die
+- Die size (length × width × thickness)
+- Material (typically silicon)
+- Power dissipation (W)
+- Power map (uniform or localized hot spots)
+- Bump map (custom or standard layout)
 
 ![image](/Images/M3/L2/4.png)
 
@@ -372,11 +427,17 @@ FOWLP enables higher performance, smaller form factors, and more I/O options, ma
 
 ### L3 - Material Definitions And Thermal Power Sources
 
+Clicking Model shows the design list. 
+
 ![image](/Images/M3/L3/1.png)
+
+Mention thermal condition for die source as boundary condition. 
 
 ![image](/Images/M3/L3/2.png)
 
 ![image](/Images/M3/L3/3.png)
+
+Mention source boundary condition on the substrate.
 
 ![image](/Images/M3/L3/4.png)
 
@@ -386,11 +447,13 @@ FOWLP enables higher performance, smaller form factors, and more I/O options, ma
 
 ![image](/Images/M3/L3/7.png)
 
-![image](/Images/M3/L3/8.png)
+Remove boundary source as it overlaps.
 
 ![image](/Images/M3/L3/9.png)
 
 ![image](/Images/M3/L3/10.png)
+
+Add monitor on substrate.
 
 ![image](/Images/M3/L3/11.png)
 
@@ -398,11 +461,17 @@ FOWLP enables higher performance, smaller form factors, and more I/O options, ma
 
 ![image](/Images/M3/L3/13.png)
 
+Add monitor on die.
+
 ![image](/Images/M3/L3/14.png)
 
 ![image](/Images/M3/L3/15.png)
 
+Assign monitor on die underfill.
+
 ![image](/Images/M3/L3/16.png)
+
+Select Temperature.  
 
 ![image](/Images/M3/L3/17.png)
 
@@ -410,23 +479,33 @@ FOWLP enables higher performance, smaller form factors, and more I/O options, ma
 
 ### L4 - Meshing And Running The Thermal Analysis
 
+Go to simulation and generate mesh. 
+
 ![image](/Images/M3/L4/1.png)
 
 ![image](/Images/M3/L4/2.png)
 
+Save project.
+
 ![image](/Images/M3/L4/3.png)
+
+Mesh is being generated.
 
 ![image](/Images/M3/L4/4.png)
 
-![image](/Images/M3/L4/5.png)
+Mesh is visualized. 
 
 ![image](/Images/M3/L4/6.png)
+
+Mesh quality is visualized through 3 bar charts - face alignment, volume and skewness.
 
 ![image](/Images/M3/L4/7.png)
 
 ![image](/Images/M3/L4/8.png)
 
 ![image](/Images/M3/L4/9.png)
+
+
 
 ![image](/Images/M3/L4/10.png)
 
