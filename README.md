@@ -653,9 +653,14 @@ These tests ensure the reliability and functionality of the semiconductor packag
 
 ### L1 - Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
 
+In this lab, we create a semiconductor package cross-section inAnsys AEDT.
+
+![image](/Images/M5/L1/1.png)
 
 ### L2 - Creating the Die and Substrate in AEDT
 
+Create a die of 3mm x 3mm at (0,0,0) with thickness 0.2mm.
+First create a rectangle, and modify the dimensions. 
 ![image](/Images/M5/L2/1.png)
 
 ![image](/Images/M5/L2/2.png)
@@ -666,15 +671,21 @@ These tests ensure the reliability and functionality of the semiconductor packag
 
 ![image](/Images/M5/L2/5.png)
 
+Thicken the sheet by 0.2mm.
+
 ![image](/Images/M5/L2/6.png)
 
 ![image](/Images/M5/L2/7.png)
 
 ![image](/Images/M5/L2/8.png)
 
+Modify the material. 
+
 ![image](/Images/M5/L2/9.png)
 
 ![image](/Images/M5/L2/10.png)
+
+Create another rectangle for substrate and assign thickness 0.5mm.
 
 ![image](/Images/M5/L2/11.png)
 
@@ -688,6 +699,8 @@ These tests ensure the reliability and functionality of the semiconductor packag
 
 ![image](/Images/M5/L2/16.png)
 
+Modify dimensions to have die on top of substrate.
+
 ![image](/Images/M5/L2/17.png)
 
 ![image](/Images/M5/L2/18.png)
@@ -695,6 +708,8 @@ These tests ensure the reliability and functionality of the semiconductor packag
 ![image](/Images/M5/L2/19.png)
 
 ### L3 - Adding Die Attach Material and Bond Pads
+
+Add die attach material made of epoxy and assign thickness 0.1mm. 
 
 ![image](/Images/M5/L3/1.png)
 
@@ -716,11 +731,19 @@ These tests ensure the reliability and functionality of the semiconductor packag
 
 ![image](/Images/M5/L3/10.png)
 
+Substrate:
+
 ![image](/Images/M5/L3/11.png)
+
+Die Underfill:
 
 ![image](/Images/M5/L3/12.png)
 
+Die:
+
 ![image](/Images/M5/L3/13.png)
+
+Create die bond pads with a thickness of 0.005mm.
 
 ![image](/Images/M5/L3/14.png)
 
@@ -729,6 +752,8 @@ These tests ensure the reliability and functionality of the semiconductor packag
 ![image](/Images/M5/L3/16.png)
 
 ![image](/Images/M5/L3/17.png)
+
+Create substrate bond pads and name each accordingly.
 
 ![image](/Images/M5/L3/18.png)
 
@@ -740,10 +765,13 @@ These tests ensure the reliability and functionality of the semiconductor packag
 
 ![image](/Images/M5/L3/22.png)
 
+Choose bond wire to make a connection between substrate and die. 
+
 ![image](/Images/M5/L3/23.png)
 
 ### L4 - Wire Bond Creation and Material Assignment
 
+Click and drag bond wire from dice to substrate.
 ![image](/Images/M5/L4/1.png)
 
 ![image](/Images/M5/L4/2.png)
