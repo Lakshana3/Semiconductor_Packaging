@@ -505,9 +505,11 @@ Mesh quality is visualized through 3 bar charts - face alignment, volume and ske
 
 ![image](/Images/M3/L4/9.png)
 
-
+Mesh operation is done.
 
 ![image](/Images/M3/L4/10.png)
+
+For analysis, add a solution step. 
 
 ![image](/Images/M3/L4/11.png)
 
@@ -521,7 +523,11 @@ Mesh quality is visualized through 3 bar charts - face alignment, volume and ske
 
 ![image](/Images/M3/L4/16.png)
 
+Validate check.
+
 ![image](/Images/M3/L4/17.png)
+
+To fix the warning, assign mesh to the object.
 
 ![image](/Images/M3/L4/18.png)
 
@@ -549,6 +555,8 @@ Mesh quality is visualized through 3 bar charts - face alignment, volume and ske
 
 ![image](/Images/M3/L5/1.png)
 
+FlipChip_BGA mesh evealuation is shown after deleting the mesh region and rerunning generate mesh.
+
 ![image](/Images/M3/L5/2.png)
 
 ![image](/Images/M3/L5/3.png)
@@ -557,21 +565,31 @@ Mesh quality is visualized through 3 bar charts - face alignment, volume and ske
 
 ![image](/Images/M3/L5/5.png)
 
+Check validation. 
+
 ![image](/Images/M3/L5/6.png)
 
 ![image](/Images/M3/L5/7.png)
+
+Click Analyze all. 
 
 ![image](/Images/M3/L5/8.png)
 
 ![image](/Images/M3/L5/9.png)
 
+Add plot fields for the entire package. 
+
 ![image](/Images/M3/L5/10.png)
+
+Create field plot for temperature.
 
 ![image](/Images/M3/L5/11.png)
 
 ![image](/Images/M3/L5/12.png)
 
 ![image](/Images/M3/L5/13.png)
+
+The thermal map for FLiChip_BGA package is shown.
 
 ![image](/Images/M3/L5/14.png)
 
