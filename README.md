@@ -223,15 +223,71 @@ RDLs are added metal layers that reroute chip I/Os, enabling finer-pitch connect
 
 ### L1 - Setting The Stage - Supply Chain And Facilities
 
+The semiconductor supply chain flows through several specialized stages, each with distinct inputs and outputs:
+1. Design House
+📍 Function: Develops the chip’s architecture and RTL.
+🔧 Input: Product requirements, IP blocks
+📤 Output: GDSII layout files for fabrication
+2. Wafer Fabrication (Foundry)
+📍 Function: Translates design into silicon wafers using photolithography and deposition.
+🔧 Input: GDSII files, silicon wafers, process recipes
+📤 Output: Processed wafers with individual dies
+3. Package Assembly and Test (OSAT)
+📍 Function: Cuts wafers, packages dies, and performs electrical testing.
+🔧 Input: Known Good Dies (KGD)
+📤 Output: Packaged and tested chips ready for integration
+4. Board Assembly and Test (EMS/ODM)
+📍 Function: Mounts chips and components onto printed circuit boards (PCBs).
+🔧 Input: Packaged ICs, passive components, PCBs
+📤 Output: Fully assembled and tested circuit boards
+5. Product Assembly and Test (OEM)
+📍 Function: Integrates PCBs into the final device (e.g., smartphones, laptops).
+🔧 Input: Assembled boards, enclosures, batteries, displays
+📤 Output: Finished electronic products, tested and ready for shipment
+This global supply chain spans fabless companies, foundries, OSATs, EMS providers, and OEMs, each playing a vital role in bringing semiconductor products to life.
+
 ![image](/Images/M2/L1/1.png)
+
+ATMP (Assembly, Testing, Marking, and Packaging) units are specialized facilities where semiconductor dies are packaged, tested, and prepared for system integration.
+These units handle processes like:
+- Die attach and wire bonding or flip chip assembly
+- Encapsulation, marking, and package singulation
+- Electrical testing to ensure functionality and reliability
+
+Organization & Layout:
+
+A typical ATMP facility is divided into:
+- Material prep & backend zones: for wafer inspection, dicing, die attach
+- Cleanroom area: for fine-pitch assembly and wire bonding
+- Testing zones: for final electrical and thermal testing
 
 ![image](/Images/M2/L1/2.png)
 
 ### L2 - Wafer Pre-Preparation - Grinding And Dicing
 
+Inside the Cleanroom:
+
+The cleanroom maintains a highly controlled environment (e.g., ISO Class 5–7) to prevent contamination during sensitive processes such as:
+- Die placement
+- Precision bonding
+- Micro soldering and underfill dispensing
+These controlled conditions are crucial for yield, especially in high-density packages like BGA and 2.5D/3D ICs.
+
 ![image](/Images/M2/L2/1.png)
 
 ### L3 - Wire Bond Packaging - Die Attach To Molding
+
+Cleanroom Activities in Wire Bond Packaging: 
+
+Inside the cleanroom, the wire bond packaging process involves a series of precise and contamination-sensitive steps:
+- Die Attach – The silicon die is carefully placed onto the substrate or lead frame using adhesive.
+- Curing – The adhesive is cured (usually thermally) to firmly bond the die.
+- Wire Bonding – Ultra-fine gold or copper wires connect the die pads to the package leads using thermosonic bonding.
+- Molding – An encapsulant material is applied to protect the die and wires from mechanical and environmental stress.
+- Marking – The packaged units are labeled with ID codes or logos for traceability.
+- Singulation – The molded packages are cut from the panel or strip into individual units.
+  
+All these steps are performed in a cleanroom to avoid dust or particle contamination, which can severely impact yield and reliability in high-density semiconductor packages.
 
 ![image](/Images/M2/L3/1.png)
 
@@ -239,9 +295,34 @@ RDLs are added metal layers that reroute chip I/Os, enabling finer-pitch connect
 
 ### L4 - Flip Chip Assembly - Bump Formation And Underfill
 
+Cleanroom Activities in Flip-Chip Packaging:
+
+In flip-chip packaging, the die is mounted face-down directly onto the substrate, enabling high-density interconnections and better performance. Inside the cleanroom, the process includes:
+- Bump Formation – Tiny solder bumps are created on the die pads using techniques like electroplating or solder paste printing.
+- Reflow – The bumped die is flipped and aligned with the substrate; then heat is applied to reflow the solder and form robust electrical and mechanical connections.
+- Underfill Dispensing – An epoxy is applied between the die and substrate to absorb mechanical stress and enhance reliability.
+- Curing – The underfill is thermally cured to harden and fix in place.
+- Encapsulation (Optional) – Additional protection may be applied, depending on the package type.
+- Inspection & Testing – Optical or X-ray inspection ensures alignment, bump integrity, and connection quality.
+
+These steps are performed in a cleanroom to prevent contamination, which is critical for maintaining precision alignment and avoiding solder defect issues.
+
 ![image](/Images/M2/L4/1.png)
 
 ### L5 - Wafer Level Packaging And Conclusion
+
+Cleanroom Activities in Wafer Level Packaging:
+
+Fan-Out Wafer-Level Packaging (FOWLP) involves reconstitution and redistribution layers (RDL) preparation. Inside the cleanroom, the key activities for FOWLP include:
+
+1. Reconstitution: The wafer is reconstituted by attaching multiple chips to a carrier wafer, creating a large surface area for the redistribution layer. This step helps in accommodating more I/O connections compared to traditional wafer-level packages.
+2. RDL (Redistribution Layer) Preparation: After reconstitution, RDL is applied to connect the I/O pads of the die to the external leads or bumps. This involves photolithography, deposition of conductive materials (like copper), and etching processes to form the interconnects.
+3. Die Attach: The individual dies are placed on the reconstituted wafer, and adhesive or solder is used to bond them to the carrier wafer.
+4. Molding and Encapsulation: A protective molding compound is applied over the entire assembly, ensuring protection and mechanical support for the dies.
+5. Testing and Inspection: The package undergoes testing and inspection to verify functionality, electrical performance, and quality.
+6. Singulation: After the package has been molded and cured, the reconstituted wafer is diced into individual packages.
+
+FOWLP enables higher performance, smaller form factors, and more I/O options, making it suitable for advanced semiconductor applications like mobile devices and high-performance computing.
 
 ![image](/Images/M2/L5/1.png)
 
