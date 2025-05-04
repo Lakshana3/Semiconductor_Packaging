@@ -69,52 +69,27 @@ As technology advances, packaging has become critical to pushing performance bou
 ![image](/Images/M1/L1/1.png)
 
 In the semiconductor world, multiple players work together to bring a chip from concept to reality:
--Fabless companies like Qualcomm and AMD design chips but don’t manufacture them.
--Foundries such as TSMC and Samsung fabricate the chips on silicon wafers.
--Once wafers are ready, they go to OSAT (Outsourced Semiconductor Assembly and Test) companies like ASE, Amkor, and JCET for packaging and testing.
+- Fabless companies like Qualcomm and AMD design chips but don’t manufacture them.
+- Foundries such as TSMC and Samsung fabricate the chips on silicon wafers.
+- Once wafers are ready, they go to OSAT (Outsourced Semiconductor Assembly and Test) companies like ASE, Amkor, and JCET for packaging and testing.
 
 ![image](/Images/M1/L1/2.png)
 
 ### L2 - Understanding Package Requirements And Foundational Package Types
 
-ATMP (Assembly, Testing, Marking, and Packaging) units are specialized facilities where semiconductor dies are packaged, tested, and prepared for system integration.
-These units handle processes like:
-- Die attach and wire bonding or flip chip assembly
-- Encapsulation, marking, and package singulation
-- Electrical testing to ensure functionality and reliability
 
-Organization & Layout:
-
-A typical ATMP facility is divided into:
-- Material prep & backend zones: for wafer inspection, dicing, die attach
-- Cleanroom area: for fine-pitch assembly and wire bonding
-- Testing zones: for final electrical and thermal testing
 
 ![image](/Images/M1/L2/1.png)
 
-Inside the Cleanroom:
 
-The cleanroom maintains a highly controlled environment (e.g., ISO Class 5–7) to prevent contamination during sensitive processes such as:
-- Die placement
-- Precision bonding
-- Micro soldering and underfill dispensing
-These controlled conditions are crucial for yield, especially in high-density packages like BGA and 2.5D/3D ICs.
 
 ![image](/Images/M1/L2/2.png)
 
+
+
+![image](/Images/M1/L2/3.png)
+
 ### L3 - Evolving Package Architectures - From Single Chip To Multi-Chip Modules
-
-Cleanroom Activities in Wire Bond Packaging: 
-
-Inside the cleanroom, the wire bond packaging process involves a series of precise and contamination-sensitive steps:
-- Die Attach – The silicon die is carefully placed onto the substrate or lead frame using adhesive.
-- Curing – The adhesive is cured (usually thermally) to firmly bond the die.
-- Wire Bonding – Ultra-fine gold or copper wires connect the die pads to the package leads using thermosonic bonding.
-- Molding – An encapsulant material is applied to protect the die and wires from mechanical and environmental stress.
-- Marking – The packaged units are labeled with ID codes or logos for traceability.
-- Singulation – The molded packages are cut from the panel or strip into individual units.
-  
-All these steps are performed in a cleanroom to avoid dust or particle contamination, which can severely impact yield and reliability in high-density semiconductor packages.
 
 ![image](/Images/M1/L3/1.png)
 
@@ -122,27 +97,15 @@ All these steps are performed in a cleanroom to avoid dust or particle contamina
 
 ### L4 - Interposers Re-distribution Layers And 2.5D/3D Packaging Approaches
 
-Cleanroom Activities in Flip-Chip Packaging:
-
-In flip-chip packaging, the die is mounted face-down directly onto the substrate, enabling high-density interconnections and better performance. Inside the cleanroom, the process includes:
-- Bump Formation – Tiny solder bumps are created on the die pads using techniques like electroplating or solder paste printing.
-- Reflow – The bumped die is flipped and aligned with the substrate; then heat is applied to reflow the solder and form robust electrical and mechanical connections.
-- Underfill Dispensing – An epoxy is applied between the die and substrate to absorb mechanical stress and enhance reliability.
-- Curing – The underfill is thermally cured to harden and fix in place.
-- Encapsulation (Optional) – Additional protection may be applied, depending on the package type.
-- Inspection & Testing – Optical or X-ray inspection ensures alignment, bump integrity, and connection quality.
-
-These steps are performed in a cleanroom to prevent contamination, which is critical for maintaining precision alignment and avoiding solder defect issues.
-
 ![image](/Images/M1/L4/1.png)
+
+![image](/Images/M1/L4/2.png)
 
 ### L5 - Comparative Analysis And Selecting The Right Packaging Solution
 
 ![image](/Images/M1/L5/1.png)
 
 ![image](/Images/M1/L5/2.png)
-
-![image](/Images/M1/L5/3.png)
 
 ---
   
