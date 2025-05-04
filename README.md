@@ -800,6 +800,7 @@ Click and drag bond wire from dice to substrate.
 
 ### L5 - Applying Mold Compound and Finalizing the Package Model
 
+Cretae a rectangular mould of thickness 1.2mm. 
 ![image](/Images/M5/L5/1.png)
 
 ![image](/Images/M5/L5/2.png)
