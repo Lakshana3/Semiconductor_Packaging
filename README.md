@@ -141,9 +141,11 @@ Semiconductor packages are built using different base structures depending on th
 
 1. Leadframe-Based Packages
 Leadframes are metal frames (usually copper-based) used for simpler, cost-effective packages.
+
 Examples:
 - QFN (Quad Flat No-lead)
 - DIP (Dual In-line Package)
+  
 Key Features:
 - Good for low to medium pin count devices
 - Used for analog, power, and general-purpose ICs
@@ -152,11 +154,13 @@ Key Features:
 
 2. Laminate-Based Packages
 Laminate substrates are multi-layer organic PCBs with traces that route signals between the die and the external interface.
+
 Examples:
 - Wirebond PBGA (Plastic Ball Grid Array)
 - Flip Chip PBGA
 - LGA (Land Grid Array)
 - FC-CSP (Flip Chip Chip-Scale Package)
+
 Key Features:
 - More routing capability than leadframes
 - Supports higher I/O counts and finer pitch
@@ -165,12 +169,14 @@ Key Features:
 
 3. Advanced Package Substrates
 Used for high-performance and heterogeneous integration, especially in AI, HPC, and networking chips.
+
 Types:
 - 2D: Multiple chips side by side on the same substrate
 - 2.1D: 2D packaging with passive interposers or bridge chips for enhanced routing
 - 2.3D: Slightly elevated interconnect complexity with embedded dies or RDL (redistribution layers)
 - 2.5D: Uses silicon interposers (e.g., CoWoS – Chip-on-Wafer-on-Substrate by TSMC) to connect multiple high-bandwidth dies
 - 3D: Vertical die stacking using Through-Silicon Vias (TSVs)
+
 Key Features:
 - Enables chiplet-based designs
 - High bandwidth, low latency interconnects
@@ -192,8 +198,8 @@ Example: TSMC’s CoWoS (used in GPUs with HBM).
 RDLs are added metal layers that reroute chip I/Os, enabling finer-pitch connections. They’re essential in fan-out packages and advanced RDL interposers (used in 2.1D/2.3D packages).
 
 🔹 2.5D vs 3D Packaging
-2.5D: Uses interposers to connect side-by-side dies with high bandwidth.
-3D: Stacks dies vertically with Through-Silicon Vias (TSVs), saving space and improving performance.
+- 2.5D: Uses interposers to connect side-by-side dies with high bandwidth.
+- 3D: Stacks dies vertically with Through-Silicon Vias (TSVs), saving space and improving performance.
 
 | Approach  | Key Element            | Example       |
 | --------- | ---------------------- | ------------- |
