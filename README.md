@@ -506,7 +506,37 @@ FOWLP enables higher performance, smaller form factors, and more I/O options, ma
 
 ### L1 - Introduction to Package Testing and Electrical Functionality Checks
 
+Testing is crucial to ensure semiconductor packages function reliably. It occurs at different stages of the manufacturing process: during wafer fabrication at the foundry and after packaging at the OSAT (Outsourced Semiconductor Assembly and Test) facility.
+
+Foundry Testing
+
+1. Wafer Probe Testing: Electrical testing of individual chips on the wafer.
+2. Parametric Testing: Measurement of electrical characteristics like voltage and current.
+3. Burn-In Testing: Exposure to elevated temperature and voltage to detect early failures.
+4. Die Sorting: Categorizing good and bad dies based on test results.
+
+OSAT Testing
+
+1. Package-Level Electrical Testing: Ensures proper electrical connections in the package.
+2. X-ray/Visual Inspection: Detects internal and external defects.
+3. Mechanical Stress Testing: Simulates mechanical forces to check package robustness.
+4. Thermal Cycling/Shock Testing: Simulates temperature extremes to test thermal durability.
+5. Burn-In Testing (Continued): Tests package reliability under full operational conditions.
+6. Functional Testing: Verifies the chip’s intended functions.
+7. Reliability Testing: Includes ESD, humidity, and pressure testing to ensure durability.
+8. Final Inspection/Marking: Ensures the package is free of defects and properly labeled.
+
+These testing stages ensure the semiconductor package's performance, reliability, and durability before reaching the customer.
+
 ![image](/Images/M4/L1/1.png)
+
+Package Testing
+
+1. AOST (Automated Optical and Scan Testing): Inspects packages for defects like misalignment, wire bond issues, and solder defects using automated systems.
+2. Burn-in Testing: Exposes packages to high temperatures and voltages to identify early failures and ensure long-term reliability.
+3. Final Test: Verifies the electrical functionality and performance of the package under normal conditions, ensuring it meets quality standards.
+
+These tests ensure the reliability and functionality of the semiconductor package throughout its lifecycle.
 
 ![image](/Images/M4/L1/2.png)
 
